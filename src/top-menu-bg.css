@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+:root {
+  font-size: 16px;
+  --dark-neutral: #a3a3a3;
+}
+
+body {
+  background: url(./assets/bg-image.png) no-repeat rgb(5, 5, 5);
+  background-position: top;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  color: #fff;
+  text-align: center;
+}
+
+.top-menu {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+
+  font-size: 1.3rem;
+  font-weight: 400;
+
+  color: var(--dark-neutral);
+
+  cursor: pointer;
+}
+
+.home:hover,
+.menu:hover,
+.contacts:hover {
+  color: #fff;
+}

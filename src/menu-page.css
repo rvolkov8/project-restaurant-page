@@ -1,0 +1,123 @@
+:root {
+  font-size: 16px;
+  --dark-neutral: #a3a3a3;
+  --darker-neutral: #404040;
+  --darkest-neutral: #262626;
+  --red: #ef4444;
+}
+
+#content {
+  position: relative;
+}
+
+.menu-container {
+  position: absolute;
+
+  padding: 30px;
+
+  height: 550px;
+  width: 800px;
+  background: var(--darkest-neutral);
+
+  border-radius: 18px;
+
+  display: grid;
+  grid-template: repeat(2, 240px) / repeat(3, 220px);
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background: var(--darker-neutral);
+}
+
+.image.ramen1 {
+  background: url(./assets/ramen-images/ramen1.png) no-repeat;
+  background-position: top;
+  background-size: 65%;
+  min-height: 130px;
+
+  margin-bottom: 10px;
+}
+
+.image.ramen2 {
+  background: url(./assets/ramen-images/ramen2.png) no-repeat;
+  background-position: top;
+  background-size: 65%;
+  min-height: 130px;
+
+  margin-bottom: 10px;
+}
+
+.image.ramen3 {
+  background: url(./assets/ramen-images/ramen3.png) no-repeat;
+  background-position: top;
+  background-size: 65%;
+  min-height: 130px;
+
+  margin-bottom: 10px;
+}
+
+.image.ramen4 {
+  background: url(./assets/ramen-images/ramen4.png) no-repeat;
+  background-position: top;
+  background-size: 65%;
+  min-height: 130px;
+
+  margin-bottom: 10px;
+}
+
+.image.ramen5 {
+  background: url(./assets/ramen-images/ramen5.png) no-repeat;
+  background-position: top;
+  background-size: 65%;
+  min-height: 130px;
+
+  margin-bottom: 10px;
+}
+
+.image.ramen6 {
+  background: url(./assets/ramen-images/ramen6.png) no-repeat;
+  background-position: top;
+  background-size: 65%;
+  min-height: 130px;
+
+  margin-bottom: 10px;
+}
+
+.price {
+  position: absolute;
+
+  right: 10px;
+  top: 100px;
+
+  background: var(--red);
+  padding: 3px 6px;
+  border-radius: 9px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 1.2rem;
+
+  align-self: center;
+  justify-self: center;
+
+  margin-bottom: 5px;
+}
+
+.description {
+  color: var(--dark-neutral);
+  font-size: 0.6rem;
+
+  align-self: center;
+  justify-self: flex-start;
+}
