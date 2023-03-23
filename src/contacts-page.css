@@ -1,0 +1,97 @@
+:root {
+  font-size: 16px;
+  --dark-neutral: #a3a3a3;
+  --darker-neutral: #404040;
+  --darkest-neutral: #262626;
+  --red: #ef4444;
+}
+
+#content {
+  position: relative;
+}
+
+.contacts-container {
+  position: absolute;
+
+  padding: 30px;
+
+  height: 550px;
+  width: 800px;
+  background: var(--darkest-neutral);
+
+  border-radius: 18px;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1.6fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 25px;
+}
+
+.map-container {
+  background: url(./assets/contacts-assets/map-image.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  border-radius: 9px;
+}
+
+.info-container {
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.phone,
+.address,
+.workingTime,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  font-size: 1.1rem;
+}
+
+.phone:hover,
+.address:hover,
+.workingTime:hover,
+.email:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.phone-icon,
+.address-icon,
+.workingTime-icon,
+.email-icon {
+  height: 40px;
+  width: 40px;
+  background: #fff;
+}
+
+.phone-icon {
+  background: url(./assets/contacts-assets/phone-icon.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.address-icon {
+  background: url(./assets/contacts-assets/address-icon.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.workingTime-icon {
+  background: url(./assets/contacts-assets/time-icon.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.email-icon {
+  background: url(./assets/contacts-assets/email-icon.svg);
+  background-size: cover;
+  background-position: center;
+}

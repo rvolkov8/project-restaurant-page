@@ -7,8 +7,10 @@
 .headline {
   font-weight: 700;
   font-size: 4.5rem;
+  cursor: pointer;
 }
 
 .subheadline {
   font-size: 1.3rem;
+  cursor: pointer;
 }
